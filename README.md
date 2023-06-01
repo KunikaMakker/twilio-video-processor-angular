@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Config for videoprocessor (Code Refernce only)
+
+After installing twilio-videoprocessors, Add the following in angular.json build/assets
+ `{
+    "glob": "**/*",
+    "input": "./node_modules/@twilio/video-processors/dist/build",
+    "output": "./assets/virtual-background"
+  }`
+
+  Now import the corresponding functions and libraries from `twilio-videoProcessors` and run `ng serve` 
